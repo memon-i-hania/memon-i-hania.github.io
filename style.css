@@ -58,6 +58,7 @@ nav ul {
     margin-right: 35px;
     margin-bottom: 12px;
     padding-top: 12px;
+    text-decoration: none;
  }
 
  nav a {
@@ -75,7 +76,8 @@ nav ul {
     color: rgb(75, 75, 112);
     padding: 17px 19px; 
     margin: -19px;
-    border-bottom-style: solid; }
+    border-bottom-style: solid; 
+    text-decoration: none;}
 
 /* style about me section */
 
@@ -93,12 +95,12 @@ nav ul {
     }
 
     .about-section .text-column h1 {
-        font-size: 30px;
         margin-bottom: 20px;
         letter-spacing: 3px;
-        font-size: 53px;
+        font-size: 50px;
         text-align: right;
         color: rgb(75, 75, 112);
+        font-weight: bold;
     }
 
     .about-section .image-column {
@@ -114,4 +116,13 @@ nav ul {
         padding: 1%;
         border: 2px dashed rgb(75, 75, 112);
         border-radius: 50%;
+    }
+
+    .my-resume h1{
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(75, 75, 112);
+        font-weight: bold;
     }
