@@ -135,19 +135,15 @@ nav ul {
     }
 
     .accordian{
-        color: rgb(68, 68, 68);
-        font-size: 18px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 1px;    
+        accordion-border-color: rgba(rgb(142, 93, 93), .125);
     }
 
-    .card{
-        border: 1px;
-        background-color:rgb(249, 249, 249);
-        border-radius: 1rem;
-        border-style: double;
-        border-color: rgb(240, 239, 239);
-
+    .accordion-header, .accordion-button, .accordion-body, .about-text, .about-paragraph, .hero_title, .hero_desc, .nav-link, .navbar-brand, .project-header, h3, .form-label{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 17px;
+        color: rgb(75, 75, 112);
+        letter-spacing: 1px;
+        font-optical-sizing: auto;
     }
 
     .headingTwo{
@@ -157,8 +153,8 @@ nav ul {
         letter-spacing: 1px;
     }
 
-    .button{
-        color: rgb(68, 68, 68);
+    a{
+        color: rgb(75, 75, 112);
         font-size: 23px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         letter-spacing: 1px;
