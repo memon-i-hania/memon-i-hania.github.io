@@ -178,4 +178,10 @@ nav ul {
         color: rgb(140, 140, 172);
     }
 
-     
+
+    footer{
+        background-color: rgb(75, 75, 112);
+        color-scheme: white;
+        margin-bottom: auto;
+        width: 100%;
+    }
