@@ -194,29 +194,36 @@ nav ul {
         width: 100%;
         padding: 25px;
         }
+
     .fa-linkedin {
-        background: #007bb5;
-        color: white;
+        background: white;
+        color: rgb(75, 75, 112);
       }
+
+    .fa-github {
+        background: white;
+        color: rgb(75, 75, 112);
+      }
+    
+    .fa-google {
+        background: white;
+        color: rgb(75, 75, 112);
+        
+      }
+
     .fa {
         padding: 20px;
-        font-size: 30px;
         width: 55px;
         height: auto;
         text-align: center;
         text-decoration: none;
         border-radius:50%;
+        margin-left: 35px;
+        margin-right: 34px;
     }
     .fa:hover{
-        opacity: 70%;
+        background: rgb(164, 164, 207);
+        color: white;
     }
 
-    .fa-github {
-        background: #007bb5;
-        color: white;
-      }
     
-    .fa-mail {
-        background: #04131b;
-        color: white;
-      }
