@@ -178,10 +178,45 @@ nav ul {
         color: rgb(140, 140, 172);
     }
 
+    .contact-me h1{
+        margin-bottom: 20px;
+        letter-spacing: 3px;
+        font-size: 50px;
+        text-align: center;
+        color: rgb(75, 75, 112);
+        font-weight: bold;
+    }
 
     footer{
         background-color: rgb(75, 75, 112);
-        color-scheme: white;
+        color: white;
         margin-bottom: auto;
         width: 100%;
+        padding: 25px;
+        }
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 55px;
+        height: auto;
+        text-align: center;
+        text-decoration: none;
+        border-radius:50%;
     }
+    .fa:hover{
+        opacity: 70%;
+    }
+
+    .fa-github {
+        background: #007bb5;
+        color: white;
+      }
+    
+    .fa-mail {
+        background: #04131b;
+        color: white;
+      }
