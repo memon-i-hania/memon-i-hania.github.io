@@ -13,6 +13,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
+  <meta name="description" content="Hania Memon's Online CV showcasing her passion for cybersecurity, cloud computing, data visualization, and Business Technology Management.">
+  <meta name="author" content="Hania Memon"
+  <meta name="keywords" content="CV, resume, professional portfolio, cybersecurity, cloud computing, data visualization, business technology management, web development">
   <title>Hania Memon's Website</title>
 </head>
 
@@ -33,20 +36,21 @@
     </div>
 </header>
 
+<div class="button">
+ <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+</div>
+
 
 <section class="about-section">
     <div class="text-column">
-        <br><br><br><br>
+        <br><br><br>
         <center><h1>A LITTLE ABOUT ME</h1></center>
         <p>Hello! My name is Hania Memon.<br>
-        I am currently a third-year student studying Business Technology Management at Toronto Metropolitan university.
-        I shall edit all of this later!
-        The sky is blue. The grass is green. I like croissants.
-        This is for demonstrating the visuals of the final project. In the final project, this will contain an image of me, not an orange!</p>
+        I am currently a third-year student studying Business Technology Management at Toronto Metropolitan university. I am a Pakistani-Canadian student with a passion for learning and exploring new concepts, particularly within the cloud computing and cyber-security sectors. Throughout my academic career, I've explored numerous hands-on opportunities to expand my technological skillset such as participating in mentorship and training programs. Feel free to look around to learn more about me. Thank you for stopping by!</p>
     </div>
 
     <div class="image-column">
-        <img src="orange.png" alt="Your Image">
+        <img src="orange.png" alt="Image of Hania Memon standing against a white background">
     </div>
 </section>
 
@@ -147,14 +151,14 @@
   <a id="contact"></a>
     <center> <h1>CONTACT ME</h1> </center>
     <div class="container">
-      <form action="#" method="post">
-          <label for="name">Name:</label> <br>
+      <form id="contactForm">
+          <label for="name">NAME:</label> <br>
           <input type="text" id="name" name="name" required> <br>
 
-          <label for="email">Email:</label> <br>
+          <label for="email">EMAIL:</label> <br>
           <input type="email" id="email" name="email" required> <br>
 
-          <label for="message">Message:</label> <br>
+          <label for="message">MESSAGE:</label> <br>
           <textarea id="message" name="message" rows="4" required></textarea> <br>
 
           <input type="submit" value="Submit">
@@ -164,9 +168,9 @@
 
 <footer>
   <center>
-   <a href= "#" class="fa fa-linkedin"> </a>
-   <a href= "https://github.com/memon-i-hania" class="fa fa-github"> </a>
-    <a href= "" class="fa fa-google"> </a>
+   <a href= "https://www.linkedin.com/in/hania-i-memon/" class="fa fa-linkedin" target="_blank"> </a>
+   <a href= "https://github.com/memon-i-hania" class="fa fa-github" target="_blank"> </a>
+    <a href= "mailto:hania.memon@torntomu.ca" class="fa fa-google" target="_blank"> </a>
   </center>
 </footer>
 </body>
