@@ -265,18 +265,14 @@ nav ul {
         color: white;
     }
 
-    body{
+    body, header, footer{
         transition: background-color 0.5s ease;
         background-color: white; 
         color: #333; 
     }
     
-    p, h1, h2, h3, h4, h5, h6 {
-        transition: color 0.5s ease; 
-    }
     .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode a, .dark-mode label, .dark-mode .about-section h1 {
         color: white; 
-        transition: background-color 0.5s ease;
     }
     .dark-mode {
         background-color: #333;
@@ -308,13 +304,11 @@ nav ul {
 
     .dark-mode .fa-github, .dark-mode .fa-google, .dark-mode .fa-linkedin {
         background-color: white;
-        transition: background-color 0.5s ease;
         color:#333
     }
 
     .dark-mode .fa:hover, .dark-mode button[type="submit"]:hover, .dark-mode .toggle-btn:hover{
         background-color: rgb(202, 201, 201);
-        transition: background-color 0.5s ease;
     }
 
     .button {
