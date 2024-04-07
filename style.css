@@ -267,8 +267,6 @@ nav ul {
 
     body, header, footer{
         transition: background-color 0.5s ease;
-        background-color: white; 
-        color: #333; 
     }
     
     .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode a, .dark-mode label, .dark-mode .about-section h1 {
