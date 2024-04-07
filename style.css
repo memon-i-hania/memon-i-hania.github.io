@@ -90,6 +90,7 @@ nav ul {
         padding-left: 70px;
         padding-right: 70px;
         text-align: left;
+        position: relative;
     }
 
     .about-section .text-column h1 {
