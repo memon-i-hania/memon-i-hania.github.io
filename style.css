@@ -285,6 +285,10 @@ nav ul {
         
     }
 
+    .dark-mode nav a:hover{
+        background-color: rgb(100, 99, 99);
+    }
+
     .dark-mode button[type="submit"]{
         background-color: white;
         color: #333;
