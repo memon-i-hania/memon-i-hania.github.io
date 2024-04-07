@@ -235,6 +235,10 @@ nav ul {
         width: 100%;
         padding: 25px;
         }
+    
+        footer a{
+            float: center;
+        }
 
     .fa-linkedin {
         background: white;
