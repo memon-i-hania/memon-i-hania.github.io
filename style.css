@@ -83,7 +83,7 @@ nav ul {
 
     .about-section {
         display: inline-flex;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         align-items: center;
         margin-right: 50px 0;
         margin-top: 1em;
@@ -285,7 +285,7 @@ nav ul {
         color: white; 
         
     }
-    .dark-mode nav a, .dark-mode .name a{
+    .dark-mode nav a, .dark-mode .name{
         color: white;
     }
 
