@@ -14,15 +14,13 @@ p{
     letter-spacing: 1px;
 }
 
-
-/* style nav bar */
 .container{
     width: 80%;
     margin: auto;}
 
 .name {
     float: left;
-    margin-right: 70px;
+    /* margin-right: 70px; */
     margin-bottom: 12px;
     padding-top: 12px;
     color: rgb(63, 63, 105);
@@ -89,7 +87,6 @@ nav ul {
 
     .about-section .text-column {
         flex: 1;
-        /* padding: 100px 78px; */
         padding-left: 70px;
         padding-right: 70px;
         text-align: left;
