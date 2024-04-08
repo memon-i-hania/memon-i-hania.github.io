@@ -16,7 +16,8 @@ p{
 .container{
     width: 100%;
     /* width: 80%; */
-    margin: auto;}
+    margin: auto;
+}
 
 .name {
     float: left;
@@ -38,7 +39,12 @@ header::after {
 
 header {
     background-color: white;
-}
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}   
 
 nav {
     float: right;
@@ -141,6 +147,7 @@ nav ul {
         color: rgb(75, 75, 112);
         letter-spacing: 1px;
         font-optical-sizing: auto;
+        z-index: 0;
     }
 
     .headingTwo{
@@ -160,6 +167,10 @@ nav ul {
 
     .my-resume a:hover{
         color: rgb(140, 140, 172);
+    }
+
+    .accordian-body{
+        z-index: 0;
     }
 
     .accordion-body li {
@@ -324,6 +335,7 @@ nav ul {
         display: inline-flex;
         /* display: inline-block; */
         padding: 10px 20px;
+        margin-top: 1em;
         background-color: rgb(75, 75, 112);
         color: white; 
         text-decoration: none; 
