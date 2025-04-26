@@ -1,21 +1,23 @@
 function toggleDarkMode() {
-    var body = document.body;
-    body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
 }
 
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
 
-    var formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
+    if (contactForm) {
+        contactForm.addEventListener("submit", function(event) {
+            event.preventDefault();
 
-    localStorage.setItem("formData", JSON.stringify(formData));
-    alert("Form submitted successfully!");
+            const formData = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value
+            };
 
-    var name = localStorage.setItem("name", name);
-    var email = localStorage.setItem("email", email);
-    var message = localStorage.setItem("message", message);
+            localStorage.setItem("formData", JSON.stringify(formData));
+            alert("Form submitted successfully!"); 
+        });
+    }
 });
+
