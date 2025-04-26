@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     background: white;
     font-size: 18px;
@@ -7,36 +7,17 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-p{
+p {
     color: rgb(68, 68, 68);
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 1px;
 }
 
-.container{
+.container {
     width: 100%;
-    /* width: 80%; */
     margin: auto;
 }
-
-.name {
-    float: left;
-    /* margin-right: 70px; */
-    margin-bottom: 12px;
-    padding-top: 12px;
-    color: rgb(63, 63, 105);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 2px;
-    }  
-    
-header::after {
-    content: '';
-    display: table;
-    clear: both;}
 
 header {
     background-color: white;
@@ -45,7 +26,19 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
-}   
+}
+
+.name {
+    float: left;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    color: rgb(63, 63, 105);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
 
 nav {
     float: right;
@@ -57,314 +50,265 @@ nav ul {
     list-style: none;
 }
 
- nav li {
+nav li {
     display: inline-block;
     margin-left: 35px;
     margin-right: 35px;
     margin-bottom: 12px;
     padding-top: 12px;
     text-decoration: none;
- }
+}
 
- nav a {
+nav a {
     color: rgb(63, 63, 105);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 2px;
+}
 
- }
-
- nav a:hover {
+nav a:hover {
     background-color: whitesmoke;
     color: rgb(75, 75, 112);
-    padding: 17px 19px; 
+    padding: 14px 19px;
     margin: -19px;
-    border-bottom-style: solid; 
-    text-decoration: none;}
+    border-bottom-style: solid;
+    text-decoration: none;
+}
 
+.about-section {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 1em;
+    padding: 20px;
+}
+
+.about-section .text-column,
+.about-section .image-column {
+    flex: 1;
+    padding: 15px;
+}
+
+.about-section .text-column h1 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 48px;
+    color: rgb(75, 75, 112);
+    font-weight: bold;
+}
+
+.about-section img {
+    max-width: 90%;
+    height: auto;
+    border: 2px dashed rgb(75, 75, 112);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.my-resume {
+    padding: 10%;
+    margin: 2em 10px 5em 10px;
+}
+
+.my-resume h1 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(75, 75, 112);
+    font-weight: bold;
+}
+
+.contact-me {
+    margin-bottom: 4em;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-me h1 {
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: rgb(75, 75, 112);
+    font-weight: bold;
+}
+
+.contact-me form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-me label {
+    color: rgb(75, 75, 112);
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-me input,
+.contact-me textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 0.25rem;
+    border: 2px solid #544b75;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: rgb(75, 75, 112);
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(140, 140, 172);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer {
+    background-color: rgb(75, 75, 112);
+    color: white;
+    padding: 25px 0;
+}
+
+.fa {
+    padding: 20px;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: white;
+    color: rgb(75, 75, 112);
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.fa:hover {
+    background: rgb(164, 164, 207);
+    color: white;
+}
+
+.button {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.toggle-btn {
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: rgb(75, 75, 112);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.toggle-btn:hover {
+    background-color: rgb(140, 140, 172);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode nav a,
+.dark-mode .name,
+.dark-mode p,
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
+.dark-mode a,
+.dark-mode label,
+.dark-mode .about-section h1 {
+    color: white;
+}
+
+.dark-mode nav a:hover {
+    background-color: rgb(100, 99, 99);
+}
+
+.dark-mode button[type="submit"],
+.dark-mode .toggle-btn {
+    background-color: white;
+    color: #333;
+}
+
+.dark-mode .about-section img {
+    border-color: white;
+}
+
+.dark-mode .fa-github,
+.dark-mode .fa-google,
+.dark-mode .fa-linkedin {
+    background-color: white;
+    color: #333;
+}
+
+.dark-mode .fa:hover,
+.dark-mode button[type="submit"]:hover,
+.dark-mode .toggle-btn:hover {
+    background-color: rgb(202, 201, 201);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .about-section {
-        display: inline-flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 50px 0;
-        margin-top: 1em;
-    }
-
-    .about-section .text-column {
-        flex: 1;
-        padding-left: 70px;
-        padding-right: 70px;
-        text-align: left;
-        position: relative;
-    }
-
-    .about-section .text-column h1 {
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-        font-size: 50px;
-        text-align: left;
-        color: rgb(75, 75, 112);
-        font-weight: bold;
-    }
-
-    .about-section .image-column {
-        flex: 1;
-        margin-left: 0px;
-        padding-right: 70px;
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-section img {
-        max-width: 90%;
-        height: 80%;
-        border-radius: 8px;
-        align-items: center;
-        padding: 1%;
-        border: 2px dashed rgb(75, 75, 112);
-        border-radius: 50%;
+        width: 70%;
     }
+}
 
-    .my-resume h1{
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-        font-size: 50px;
-        text-align: center;
-        color: rgb(75, 75, 112);
-        font-weight: bold;
-    }
-
-    .my-resume{
-        padding: 10%;
-        margin-top: 2em;
-        margin-bottom: 5em;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .accordion-header, .accordion-button, .accordion-body, .about-text, .about-paragraph, .hero_title, .hero_desc, .nav-link, .navbar-brand, .project-header, h3, .form-label{
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 17px;
-        color: rgb(75, 75, 112);
-        letter-spacing: 1px;
-        font-optical-sizing: auto;
-        z-index: 0;
-    }
-
-    .headingTwo{
-        color: rgb(75, 75, 112);
-        font-size: 23px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 1px;
-    }
-
-    .my-resume a{
-        color: rgb(75, 75, 112);
-        font-size: 18px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-
-    .my-resume a:hover{
-        color: rgb(140, 140, 172);
-    }
-
-    .accordian-body{
-        z-index: 0;
-    }
-
-    .accordion-body li {
-        color:rgb(68, 68, 68)
-    }
-
-    .accordion-body a{
-        color: rgb(75, 75, 112);
-        font-size: 18px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 1px;
-        text-decoration: none;
-    }
-
-    .accordian-body a:hover{
-        color: rgb(140, 140, 172);
-    }
-
-    .contact-me h1{
-        margin-bottom: 20px;
-        letter-spacing: 3px;
-        font-size: 50px;
-        color: rgb(75, 75, 112);
-        font-weight: bold;
-    }
-
-    .contact-me {
-        margin-bottom: 4em;
-        line-height: 2em;
-        text-align: center;
-        padding: 20px;
+@media (max-width: 600px) {
+    .fa {
+        width: 45px;
+        height: 45px;
+        padding: 15px;
+        font-size: 20px;
+        margin: 10px;
     }
 
     .contact-me form {
-        display: inline-block; /* This keeps form left-aligned under a centered heading */
-        text-align: left; /* Inputs and labels stay left-aligned */
-        max-width: 500px; /* Optional: limit width so it's clean on mobile */
-        width: 100%;
+        width: 90%;
     }
-
-    .contact-me label
-        {color: rgb(75, 75, 112); 
-        font-weight: bold; 
-        letter-spacing: 1px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-left: 5%;
-        }
 
     .contact-me input,
     .contact-me textarea {
         width: 100%;
-        max-width: 435px;
-        margin-bottom: 15px;
-        padding: 8px;
-        border-radius: 0.25rem;
-        border: 2px solid #544b75;
-        box-sizing: border-box;
-        margin-left: 5%;
+        max-width: 100%;
+        margin-left: 0;
     }
 
-
-    button[type="submit"]{
-        background-color: rgb(75, 75, 112);
-        color: white;
-        letter-spacing: 1px;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        font-size: 18px;
-        margin-top: 10px;
-        margin-left: 5%;
-      }
-
-      button[type="submit"]:hover {
-        background-color: rgb(140, 140, 172);
-      }
-
-    footer{
-        background-color: rgb(75, 75, 112);
-        color: white;
-        padding: 25px 0;
-        }
-        
-
-      .footer-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap; 
-        gap: 40px; /* spacing between icons */
-      }
-
-    .fa {
-        padding: 20px;
-        width: 55px;
-         height: 55px;
-         text-align: center;
-         text-decoration: none;
-         border-radius: 50%;
-         background: white;
-         color: rgb(75, 75, 112);
-         font-size: 24px;
-         transition: all 0.3s ease;
+    .contact-me button[type="submit"] {
+        margin-left: 0;
     }
-    .fa:hover{
-        background: rgb(164, 164, 207);
-        color: white;
-    }
-
-    @media (max-width: 600px) {
-        .fa {
-          width: 45px;
-          height: 45px;
-          padding: 15px;
-          font-size: 20px;
-          margin: 10px;
-        }
-    }    
-
-    body, header, footer{
-        transition: background-color 0.5s ease;
-    }
-    
-    .dark-mode p, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6, .dark-mode a, .dark-mode label, .dark-mode .about-section h1 {
-        color: white; 
-    }
-    .dark-mode {
-        background-color: #333;
-        color: white; 
-        transition: background-color 0.5s ease;
-        
-    }
-    .dark-mode nav a, .dark-mode .name{
-        color: white
-        
-    }
-
-    .dark-mode nav a:hover{
-        background-color: rgb(100, 99, 99);
-    }
-
-    .dark-mode button[type="submit"]{
-        background-color: white;
-        color: #333;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-      }
-
-    .dark-mode .about-section img {
-        border-color: white;
-    }
-
-    .dark-mode header, .dark-mode footer {
-        background-color: #333;
-        transition: background-color 0.5s ease;
-    }
-
-    .dark-mode .fa-github, .dark-mode .fa-google, .dark-mode .fa-linkedin {
-        background-color: white;
-        color:#333
-    }
-
-    .dark-mode .fa:hover, .dark-mode button[type="submit"]:hover, .dark-mode .toggle-btn:hover{
-        background-color: rgb(202, 201, 201);
-    }
-
-    .button {
-        text-align: center;
-        margin-top: 50px;
-        float: left;
-        margin-left: 65px 
-    }
-    .toggle-btn {
-        display: inline-flex;
-        /* display: inline-block; */
-        padding: 10px 20px;
-        margin-top: 1em;
-        background-color: rgb(75, 75, 112);
-        color: white; 
-        text-decoration: none; 
-        font-size: 18px; 
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        letter-spacing: 1px;
-        border-radius: 5px;
-        border: none;
-    }
-
-    .toggle-btn:hover {
-        background-color: rgb(140, 140, 172);
-    }
-
-    .dark-mode .toggle-btn{
-        background-color: white;
-        color: #333;
-    }
+}
