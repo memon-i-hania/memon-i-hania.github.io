@@ -175,18 +175,18 @@ button[type="submit"]:hover {
     background-color: rgb(140, 140, 172);
 }
 
+footer {
+    background-color: rgb(75, 75, 112);
+    color: white;
+    padding: 25px 0;
+}
+
 .footer-icons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px;
-}
-
-footer {
-    background-color: rgb(75, 75, 112);
-    color: white;
-    padding: 25px 0;
+    gap: 40px; /* spacing between icons */
 }
 
 .fa {
@@ -232,22 +232,34 @@ footer {
 .dark-mode {
     background-color: #333;
     color: white;
+    transition: background-color 0.5s ease;
 }
 
-.dark-mode nav a,
-.dark-mode .name,
-.dark-mode p,
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4,
-.dark-mode h5,
-.dark-mode h6,
-.dark-mode a,
-.dark-mode label,
-.dark-mode .about-section h1 {
-    color: white;
+body, header, footer{
+    transition: background-color 0.5s ease;
 }
+
+.dark-mode p, 
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode h5, 
+.dark-mode h6, 
+.dark-mode a, 
+.dark-mode label, 
+.dark-mode .about-section h1 {
+    color: white; 
+}
+
+.dark-mode nav a, .dark-mode .name{
+    color: white
+}
+
+.dark-mode header, .dark-mode footer {
+    background-color: #333;
+    transition: background-color 0.5s ease;
+} 
 
 .dark-mode nav a:hover {
     background-color: rgb(100, 99, 99);
