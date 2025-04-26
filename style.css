@@ -327,7 +327,29 @@ body, header, footer{
     border-color: white;
 }
 
+.dark-mode .accordion-button {
+    background-color: #444;
+    color: white;
+}
 
+.dark-mode .accordion-button.collapsed {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode .accordion-body {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode .accordion-item {
+    background-color: #444;
+    border-color: #666;
+}
+
+.dark-mode .accordion-body li{
+    color: white;
+}
 
 .dark-mode .fa-github,
 .dark-mode .fa-google,
