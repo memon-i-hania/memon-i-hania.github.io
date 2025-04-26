@@ -187,6 +187,16 @@ nav a:hover {
     font-weight: bold;
 }
 
+.contact-me a{
+    color: rgb(75, 75, 112);
+    text-decoration: none;
+}
+
+.contact-me a:hover{
+    color: rgb(140, 140, 172);
+    text-decoration: none;
+}
+
 .contact-me form {
     display: inline-block;
     text-align: left;
