@@ -25,7 +25,7 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 999; /*positioning for no interference with accordion*/
+    z-index: 999; /*top position fixing the accordion overlay thing*/
     backdrop-filter: blur(5px); /* soft blur */
     -webkit-backdrop-filter: blur(5px); /* safari support */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -290,7 +290,7 @@ footer {
     background-color: rgb(140, 140, 172);
 }
 
-/* Dark Mode */
+/* dark mode */
 .dark-mode {
     background-color: #333;
     color: white;
@@ -409,4 +409,54 @@ body, header, footer{
     .contact-me button[type="submit"] {
         margin-left: 0;
     }
+
+    .landing-content h1 {
+        font-size: 40px;
+    }
+
+    .landing-content p {
+        font-size: 18px;
+    }
 }
+
+
+/* this is my new stuff */
+
+.landing-page {
+    height: 100vh;
+    width: 100%;
+    background: url("backgroundpic.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+}
+
+
+.landing-content {
+    max-width: 80%;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing-content h1 {
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.landing-content p {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
