@@ -87,10 +87,24 @@ nav a:hover {
     padding: 20px;
 }
 
-.about-section .text-column,
+/* .about-section .text-column,
 .about-section .image-column {
     flex: 1;
     padding: 15px;
+} */
+
+.about-section {
+    display: flex;
+    gap: 50px;
+}
+
+.about-section .text-column {
+    flex-basis: 65%;
+    padding-right: 20px;
+}
+
+.about-section .image-column {
+    flex-basis: 35%;
 }
 
 .about-section .text-column h1 {
